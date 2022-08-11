@@ -1,9 +1,9 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-E-mail: sadw621@gmail.com -  */
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from "../../Styles/GlobalStyles";
+import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from '../../Styles/GlobalStyles';
 
 function WelcomePage3() {
 
@@ -21,7 +21,7 @@ function WelcomePage3() {
             <p>Cultivate in you an iron character for training.</p>
           </WelcomeTextContainer>
           <WelcomeContainer>
-            <Button OnClick={() => navigation("/login")}>Next</Button>
+            <Button OnClick={() => navigation('/login')}>Next</Button>
           </WelcomeContainer>
         </WelcomeContainer>
       </div>

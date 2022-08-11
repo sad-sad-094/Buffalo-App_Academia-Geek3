@@ -1,9 +1,9 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-E-mail: sadw621@gmail.com -  */
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from "../../Styles/GlobalStyles";
+import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from '../../Styles/GlobalStyles';
 
 function WelcomePage1() {
 
@@ -21,7 +21,7 @@ function WelcomePage1() {
             <p>Start training with usand build muscle or lose weight.</p>
           </WelcomeTextContainer>
           <WelcomeContainer>
-            <Button OnClick={() => navigation("/welcome2")}>Next</Button>
+            <Button OnClick={() => navigation('/welcome2')}>Next</Button>
           </WelcomeContainer>
         </WelcomeContainer>
       </div>

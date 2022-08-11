@@ -1,14 +1,19 @@
+/* Author: Sebastian Aguirre Duque - José Félix Céspedes
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
+
+
 import React, { useState } from 'react';
-import { WelcomeTextContainer, BasicContainer, WelcomeContainer, SingUp } from "../../styles/GlobalStyles";
+import { WelcomeTextContainer, BasicContainer, WelcomeContainer, SingUp, GoogleLogo } from '../../Styles/GlobalStyles';
 import LoginInput from '../modules/LoginInput';
 import LoginButton from '../modules/LoginButton';
-import app, { db } from '../../utils/FireBase';
+import app, { db, google } from '../../utils/Firebase';
+import firebase  from 'firebase';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 function Login(props) {
 
-  
+
   const defaultUser = () => {
     return {
       email: "",
@@ -59,6 +64,31 @@ function Login(props) {
       })
   }
 
+  const loginGoogle = () => {
+
+    firebase.auth()
+      .signInWithPopup(google)
+      .then((result) => {
+        /** @type {firebase.auth.OAuthCredential} */
+        let credential = result.credential;
+
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        let token = credential.accessToken;
+        // The signed-in user info.
+        let user = result.user;
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        let errorCode = error.code;
+        let errorMessage = error.message;
+        // The email of the user's account used.
+        let email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        let credential = error.credential;
+        // ...
+      });
+  }
+
 
   return (
 
@@ -72,6 +102,7 @@ function Login(props) {
       </BasicContainer>
       <WelcomeContainer>
         <LoginButton login={letLogin} />
+        <GoogleLogo src="https://res.cloudinary.com/dtxqusdhr/image/upload/v1660161233/BuffaloApp/GoogleLogo_h0blc0.png" onClick={loginGoogle} />
         <SingUp>
           <p>Don´t have an account? <a onClick={() => { navigation("/createaccount") }}>Sing up</a></p>
         </SingUp>

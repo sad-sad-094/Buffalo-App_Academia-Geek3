@@ -5,7 +5,7 @@ E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 import React, { useState } from 'react';
 import app, { db } from '../../utils/FireBase';
 import 'firebase/auth';
-import { WelcomeTextContainer, BasicContainer, WelcomeContainer } from "../../styles/GlobalStyles";
+import { WelcomeTextContainer, BasicContainer, WelcomeContainer } from '../../Styles/GlobalStyles';
 import CreateButton from '../modules/CreateButton';
 import CreateInput from '../modules/CreateInput';
 import { toast } from 'react-toastify';
