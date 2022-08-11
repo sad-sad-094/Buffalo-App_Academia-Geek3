@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
 E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
@@ -8,24 +7,12 @@ import { WelcomeTextContainer, BasicContainer, WelcomeContainer, SingUp, GoogleL
 import LoginInput from '../modules/LoginInput';
 import LoginButton from '../modules/LoginButton';
 import app, { db, google } from '../../utils/Firebase';
-import firebase  from 'firebase';
-=======
-import React, { useState } from 'react';
-import { WelcomeTextContainer, BasicContainer, WelcomeContainer, SingUp } from "../../styles/GlobalStyles";
-import LoginInput from '../modules/LoginInput';
-import LoginButton from '../modules/LoginButton';
-import app, { db } from '../../utils/FireBase';
->>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
+import firebase from 'firebase';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 function Login(props) {
 
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
   const defaultUser = () => {
     return {
       email: "",
@@ -76,7 +63,6 @@ function Login(props) {
       })
   }
 
-<<<<<<< HEAD
   const loginGoogle = () => {
 
     firebase.auth()
@@ -102,8 +88,6 @@ function Login(props) {
       });
   }
 
-=======
->>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
 
   return (
 
@@ -117,10 +101,7 @@ function Login(props) {
       </BasicContainer>
       <WelcomeContainer>
         <LoginButton login={letLogin} />
-<<<<<<< HEAD
         <GoogleLogo src="https://res.cloudinary.com/dtxqusdhr/image/upload/v1660161233/BuffaloApp/GoogleLogo_h0blc0.png" onClick={loginGoogle} />
-=======
->>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
         <SingUp>
           <p>Don´t have an account? <a onClick={() => { navigation("/createaccount") }}>Sing up</a></p>
         </SingUp>

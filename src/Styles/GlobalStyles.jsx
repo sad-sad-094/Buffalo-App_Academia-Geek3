@@ -1,9 +1,5 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-<<<<<<< HEAD
 E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
-=======
-E-mail: sadw621@gmail.com -  */
->>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
 
 
 import styled from 'styled-components';
@@ -95,10 +91,8 @@ export const Input = styled.input`
   border-radius: 15px;
   font-size: 14px;
 `;
-<<<<<<< HEAD
 
 export const GoogleLogo = styled.img`
   width: 20%;
 `;
-=======
->>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
+
