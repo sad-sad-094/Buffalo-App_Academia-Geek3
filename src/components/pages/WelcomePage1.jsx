@@ -1,9 +1,11 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-E-mail: sadw621@gmail.com -  */
+
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from "../../Styles/GlobalStyles";
+import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from '../../Styles/GlobalStyles';
+
 
 function WelcomePage1() {
 
@@ -12,19 +14,19 @@ function WelcomePage1() {
   return (
 
     <div>
-        <BasicContainer>
-          <LandingImg src="https://res.cloudinary.com/dtxqusdhr/image/upload/v1660057605/BuffaloApp/Img_Bg1_uhmajl.png" />
-        </BasicContainer>
+      <BasicContainer>
+        <LandingImg src="https://res.cloudinary.com/dtxqusdhr/image/upload/v1660057605/BuffaloApp/Img_Bg1_uhmajl.png" />
+      </BasicContainer>
+      <WelcomeContainer>
+        <WelcomeTextContainer>
+          <h1>Workout</h1>
+          <p>Start training with usand build muscle or lose weight.</p>
+        </WelcomeTextContainer>
         <WelcomeContainer>
-          <WelcomeTextContainer>
-            <h1>Workout</h1>
-            <p>Start training with usand build muscle or lose weight.</p>
-          </WelcomeTextContainer>
-          <WelcomeContainer>
-            <Button OnClick={() => navigation("/welcome2")}>Next</Button>
-          </WelcomeContainer>
+          <Button OnClick={() => navigation('/welcome2')}>Next</Button>
         </WelcomeContainer>
-      </div>
+      </WelcomeContainer>
+    </div>
   )
 
 }

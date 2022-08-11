@@ -1,5 +1,6 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-E-mail: sadw621@gmail.com -  */
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
+
 
 
 import React from 'react';

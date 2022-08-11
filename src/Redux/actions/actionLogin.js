@@ -1,4 +1,4 @@
-import { typesLogin } from "../types"
+import { typesLogin } from "../types/types"
 
 
 export const actionLoginSync = (email, pass)=>{

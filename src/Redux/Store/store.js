@@ -1,3 +1,5 @@
+/* Author: Sebastian Aguirre Duque - José Félix Céspedes
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 
 import { applyMiddleware, combineReducers, createStore, compose } from 'redux';
