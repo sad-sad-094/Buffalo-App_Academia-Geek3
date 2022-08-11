@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
 E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import React from 'react';
 import { Input } from '../../Styles/GlobalStyles';
+=======
+/* Author: Sebastian Aguirre Duque - José Félix Cespedes
+E-mail: sadw621@gmail.com -  */
+
+import React from 'react';
+import { Input } from '../../styles/GlobalStyles';
+>>>>>>> a3a20466dfcead2efe6f091fe9aeccb8fd03b6a0
 
 function LoginInput(props) {
 
