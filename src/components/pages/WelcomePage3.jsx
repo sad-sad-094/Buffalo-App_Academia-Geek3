@@ -5,7 +5,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LandingImg, WelcomeTextContainer, BasicContainer, WelcomeContainer, Button } from '../../Styles/GlobalStyles';
 
-
 function WelcomePage3() {
 
   const navigation = useNavigate()
@@ -13,19 +12,19 @@ function WelcomePage3() {
   return (
 
     <div>
-      <BasicContainer>
-        <LandingImg src="https://res.cloudinary.com/dtxqusdhr/image/upload/v1660057605/BuffaloApp/Img_Bg3_wntkew.png" />
-      </BasicContainer>
-      <WelcomeContainer>
-        <WelcomeTextContainer>
-          <h1>Character</h1>
-          <p>Cultivate in you an iron character for training.</p>
-        </WelcomeTextContainer>
+        <BasicContainer>
+          <LandingImg src="https://res.cloudinary.com/dtxqusdhr/image/upload/v1660057605/BuffaloApp/Img_Bg3_wntkew.png" />
+        </BasicContainer>
         <WelcomeContainer>
-          <Button OnClick={() => navigation('/login')}>Next</Button>
+          <WelcomeTextContainer>
+            <h1>Character</h1>
+            <p>Cultivate in you an iron character for training.</p>
+          </WelcomeTextContainer>
+          <WelcomeContainer>
+            <Button onClick={() => navigation("/login")}>Next</Button>
+          </WelcomeContainer>
         </WelcomeContainer>
-      </WelcomeContainer>
-    </div>
+      </div>
   )
 
 }

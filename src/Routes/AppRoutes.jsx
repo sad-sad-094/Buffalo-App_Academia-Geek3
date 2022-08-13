@@ -8,6 +8,7 @@ import Login from '../components/pages/LoginPage';
 import WelcomePage1 from '../components/pages/WelcomePage1';
 import WelcomePage2 from '../components/pages/WelcomePage2';
 import WelcomePage3 from '../components/pages/WelcomePage3';
+import CreateAccount from '../components/pages/CreateAccountPage';
 
 
 
@@ -22,6 +23,10 @@ function AppRoutes() {
         <Route path="/welcome2" element={<WelcomePage2 />} />
         <Route path="/welcome3" element={<WelcomePage3 />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/createaccount" element={<CreateAccount />} />
+
+        <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
     </BrowserRouter>
   )

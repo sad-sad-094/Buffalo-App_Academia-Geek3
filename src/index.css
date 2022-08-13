@@ -11,6 +11,22 @@ body {
   background-color: #1F233E;
 }
 
+h1 {
+  color: #FFFF;
+}
+
+h2 {
+  color: #FFFF;
+}
+
+h3 {
+  color: #FFFF;
+}
+
+p {
+  color: #FFFF;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

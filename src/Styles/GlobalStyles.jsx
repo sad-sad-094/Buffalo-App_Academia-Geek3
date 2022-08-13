@@ -6,8 +6,8 @@ import styled from 'styled-components';
 
 
 export const LandingImg = styled.img`
-  width: 35%;
-  margin: 2rem auto;
+  width: 30%;
+  margin: 1rem auto;
 `;
 
 export const LandingContainer = styled.div`
@@ -15,7 +15,7 @@ export const LandingContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 70%;
-  height: 70%;
+  height: 60%;
   margin: auto;
 `;
 
@@ -57,10 +57,10 @@ export const WelcomeContainer = styled.div`
   align-items: felx-end;
 
   a {
-    text-decoration:none;
+    text-decoration: underline;
     cursor: pointer;
     font-width: bold;
-    color:#0048BA;
+    color:#ffffff;
   }
 `;
 
@@ -77,8 +77,10 @@ export const WelcomeTextContainer = styled.div`
 
 export const SingUp = styled.div`
   display: flex;
+  flex-direction: column;
   width: 70%;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 `;
 
@@ -95,4 +97,3 @@ export const Input = styled.input`
 export const GoogleLogo = styled.img`
   width: 20%;
 `;
-
