@@ -3,7 +3,7 @@ E-mail: sadw621@gmail.com -  */
 
 
 import React from 'react'
-import { Button } from '../../styles/GlobalStyles';
+import { Button } from '../../Styles/GlobalStyles';
 
 function LoginButton(props) {
 

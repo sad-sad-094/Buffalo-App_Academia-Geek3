@@ -2,7 +2,7 @@
 E-mail: sadw621@gmail.com -  */
 
 import React from 'react';
-import { Input } from '../../styles/GlobalStyles';
+import { Input } from '../../Styles/GlobalStyles';
 
 function LoginInput(props) {
 
