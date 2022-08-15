@@ -30,7 +30,7 @@ function Suscription() {
   
           
           <PhysicalTextContainer5>
-            <ButtonF OnClick={() => navigation("/gender")}>Next</ButtonF>
+            <ButtonF onClick={() => navigation("/days")}>Next</ButtonF>
           </PhysicalTextContainer5>
         </MainContainer>
       </div>

@@ -21,7 +21,7 @@ function WelcomePage3() {
             <p>Cultivate in you an iron character for training.</p>
           </WelcomeTextContainer>
           <WelcomeContainer>
-            <Button OnClick={() => navigation("/login")}>Next</Button>
+            <Button onClick={() => navigation("/login")}>Next</Button>
           </WelcomeContainer>
         </WelcomeContainer>
       </div>

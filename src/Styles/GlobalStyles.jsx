@@ -257,10 +257,6 @@ export const SuscriptP=styled.p`
   text-decoration: none;
   cursor: pointer;
   transition:0.3s;
-  
-  
-
-
   &:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -273,3 +269,152 @@ export const SuscriptP=styled.p`
   background-color:transparent;
   text-align:center;
 `;
+
+
+//days y las siguientes 14 AGOTO NEW CHANGES
+
+export const DaysConatiner = styled.div`
+  display:flex;
+  width: 400px;
+  height:220px;
+  margin: 0rem auto;
+  justify-content: center;
+  align-items: center;
+  background-color:red;
+`
+export const DaysImg = styled.img`
+   width: 400px;
+  height:220px;
+`
+export const DaysP=styled.p`
+  color:whitesmoke;
+  font-weight:lighter;
+  margin-top:0px;
+  
+`
+export const DayConte=styled.div`
+  display:flex;
+  width:250px;
+  height:33px;
+  background-color:transparent;
+  column-gap:30px;
+  margin-left:-30px;
+ 
+`
+export const DayB3=styled.button`
+  border-radius:10px;
+  color:whitesmoke;
+  font-weight:lighter;
+  width:65px;
+  height:30px;
+  background-color:transparent;
+  border: 0.2px solid whitesmoke; 
+  cursor: pointer; 
+  &:hover {
+    border: solid 2px #7cb2e97e; 
+  }
+  z-index:2;
+`
+export const EnterDay= styled.input`
+width:75%;
+height:30px;
+margin-top:120px;
+margin-left:50px;
+border-radius:15px;
+background-color:transparent;
+border:0.001px solid whitesmoke;
+`
+export const EnterDay2= styled.input`
+width:75%;
+height:30px;
+margin-top:10px;
+margin-left:50px;
+border-radius:15px;
+background-color:transparent;
+border:0.001px solid whitesmoke;
+`
+export const ButtonDay= styled.button`
+width: 30%;
+height:30px;
+margin: 14px 159px auto;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+font-size: 14px;
+font-weight: lighter;
+color: #FFFFFF;
+text-decoration: none;
+border:none;
+cursor: pointer;
+transition:0.3s;
+&:hover {
+  font-size:15px
+}`
+//SECOND DAY CODE 15 AGOSTO
+export const ButtonF5= styled.button`
+width: 75%;
+height:35px;
+padding: 3px 2px;
+margin: 140px 55px auto;
+border-radius: 15px;
+border: 1px solid #2BE7E8;
+justify-content: center;
+align-items: center;
+background-color: #2BE7E8;
+font-size: 14px;
+font-weight: bold;
+color: #FFFFFF;
+text-decoration: none;
+cursor: pointer;
+transition:0.3s;
+&:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}`
+export const EnterDay6= styled.input`
+width:80px;
+height:30px;
+margin-top:0px;
+margin-left:0px;
+border-radius:15px;
+background-color:transparent;
+border:none;
+outline:none;
+
+padding-top:10px;
+`
+export const TitleVideo= styled.div`
+  display:flex;
+  margin-left:450px;
+  width:30%;
+  column-gap:245px;
+  background-color:transparent;
+`
+export const PhysicalP2=styled.p`
+  color:whitesmoke;
+  font-weight:lighter;
+  margin-top:0px;
+`
+export const TitleVideo1= styled.div`
+  display:flex;
+  margin-left:50px;
+  margin-top:10px;
+  border-radius:15px;
+  width:340px;
+  height:35px;
+  column-gap:50px;
+  background-color:transparent;
+  border: solid 2px #7cb2e97e; 
+  &:hover {
+    background-color: #2BE7E8;
+}
+
+`
+export const SetTitle= styled.h1`
+  font-size:18px;
+  margin-left:5px;
+color:whitesmoke;
+font-weight:lighter;
+margin-top:5px;
+`

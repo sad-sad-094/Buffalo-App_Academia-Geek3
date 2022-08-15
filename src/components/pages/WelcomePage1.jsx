@@ -21,7 +21,7 @@ function WelcomePage1() {
             <p>Start training with usand build muscle or lose weight.</p>
           </WelcomeTextContainer>
           <WelcomeContainer>
-            <Button OnClick={() => navigation("/welcome2")}>Next</Button>
+            <Button onClick={() => navigation("/welcome2")}>Next</Button>
           </WelcomeContainer>
         </WelcomeContainer>
       </div>
