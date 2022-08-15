@@ -1,5 +1,5 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-E-mail: sadw621@gmail.com -  */
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import { React } from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -11,6 +11,7 @@ import Suscription from '../components/pages/Suscription';
 import WelcomePage1 from '../components/pages/WelcomePage1';
 import WelcomePage2 from '../components/pages/WelcomePage2';
 import WelcomePage3 from '../components/pages/WelcomePage3';
+import CreateAccount from '../components/pages/CreateAccountPage';
 
 
 
@@ -20,8 +21,8 @@ function AppRoutes() {
 
     <BrowserRouter>
       <Routes>
+
         <Route path='/' element={<Landing/>}/>
-      
         <Route path="/welcome1" element={<WelcomePage1 />} />
         <Route path="/welcome2" element={<WelcomePage2 />} />
         <Route path="/welcome3" element={<WelcomePage3 />} />
@@ -29,6 +30,9 @@ function AppRoutes() {
         <Route path="/gender" element={<Gender />} />
         <Route path="/suscription" element={<Suscription />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/createaccount" element={<CreateAccount />} />
+
+        <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>
     </BrowserRouter>
