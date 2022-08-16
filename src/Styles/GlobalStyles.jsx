@@ -1,13 +1,13 @@
 /* Author: Sebastian Aguirre Duque - José Félix Céspedes
-E-mail: sadw621@gmail.com -  */
+E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 
 import styled from 'styled-components';
 
 
 export const LandingImg = styled.img`
-  width: 35%;
-  margin: 2rem auto;
+  width: 30%;
+  margin: 1rem auto;
 `;
 
 
@@ -16,7 +16,7 @@ export const LandingContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 70%;
-  height: 70%;
+  height: 60%;
   margin: auto;
 `;
 
@@ -58,10 +58,10 @@ export const WelcomeContainer = styled.div`
   align-items: felx-end;
 
   a {
-    text-decoration:none;
+    text-decoration: underline;
     cursor: pointer;
-    font-weight: bold;
-    color:#0048BA;
+    font-width: bold;
+    color:#ffffff;
   }
 `;
 
@@ -78,8 +78,10 @@ export const WelcomeTextContainer = styled.div`
 
 export const SingUp = styled.div`
   display: flex;
+  flex-direction: column;
   width: 70%;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 `;
 
@@ -92,28 +94,6 @@ export const Input = styled.input`
   border-radius: 15px;
   font-size: 14px;
 `;
-export const Button2 = styled.button`
-  width: 70%;
-  padding: 3px 2px;
-  margin: 0 auto;
-  border-radius: 15px;
-  border: 1px solid #2BE7E8;
-  justify-content: center;
-  align-items: center;
-  background-color: #2BE7E8;
-  font-size: 14px;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-`;
-
 
 //PARTNER
 
@@ -130,6 +110,7 @@ export const PhysicalConatiner = styled.div`
   align-items: center;
   background-color:transparent;
 `;
+
 export const PhysicalTextContainer = styled.div`
   width: 150px;
   height: 30px;
@@ -138,12 +119,14 @@ export const PhysicalTextContainer = styled.div`
   text-align:center;
  
 `;
-export const PhysicalP=styled.p`
+
+export const PhysicalP = styled.p`
   color:whitesmoke;
   font-weight:bolder;
   margin-top:0px;
   
-`
+`;
+
 export const PhysicalTextContainer2 = styled.div`
   width: 440px;
   height: 80px;
@@ -151,6 +134,7 @@ export const PhysicalTextContainer2 = styled.div`
   background-color:transparent;
   text-align:center;
 `;
+
 export const ButtonF = styled.button`
   width: 80%;
   height:35px;
@@ -172,22 +156,26 @@ export const ButtonF = styled.button`
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-  }`
-  export const MainContainer = styled.div`
+  }
+  `;
+
+export const MainContainer = styled.div`
   width: 35%;
   height:345px;
   background-color:transparent;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  `
-  export const EnterD= styled.input`
-    width:70px;
-    height:20px;
-    margin-top:30px;
-    margin-left:180px;
-  `
-  export const PhysicalTextContainer3 = styled.div`
+`;
+
+export const EnterD = styled.input`
+  width:70px;
+  height:20px;
+  margin-top:30px;
+  margin-left:180px;
+`;
+
+export const PhysicalTextContainer3 = styled.div`
   width: 150px;
   height: 30px;
   margin: 5px auto;
@@ -195,17 +183,20 @@ export const ButtonF = styled.button`
   text-align:center;
 
 `;
-export const EnterD2= styled.input`
-width:70px;
-height:20px;
-margin-top:0px;
-margin-left:180px;
-`
-export const MaleImg=styled.img`
+
+export const EnterD2 = styled.input`
+  width:70px;
+  height:20px;
+  margin-top:0px;
+  margin-left:180px;
+`;
+
+export const MaleImg = styled.img`
   width:100px;
   height:100px;
   margin-left: 170px;
   transition:0.3s;
+  
   &:hover {
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
@@ -214,7 +205,8 @@ export const MaleImg=styled.img`
     border-radius:10px;
     
   }
-`
+`;
+
 export const PhysicalTextContainer4 = styled.div`
   width: 190px;
   height: 30px;
@@ -223,7 +215,8 @@ export const PhysicalTextContainer4 = styled.div`
   text-align:center;
  
 `;
-export const SuscriptP=styled.p`
+
+export const SuscriptP = styled.p`
   color:whitesmoke;
   font-weight:lighter;
   font-size:12px;
@@ -231,8 +224,9 @@ export const SuscriptP=styled.p`
   width: 370px;
   background-color:transparent;
   margin-left:-90px;
-  `
-  export const EnterD4= styled.input`
+  `;
+
+export const EnterD4 = styled.input`
   width:77%;
   height:35px;
   margin-top:105px;
@@ -240,8 +234,9 @@ export const SuscriptP=styled.p`
   border-radius:15px;
   background-color:transparent;
   border:0.001px solid whitesmoke;
-  `
-  export const ButtonF2= styled.button`
+  `;
+
+export const ButtonF2 = styled.button`
   width: 80%;
   height:35px;
   padding: 3px 2px;
@@ -259,16 +254,18 @@ export const SuscriptP=styled.p`
   transition:0.3s;
   &:hover {
     -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }`
-  export const PhysicalTextContainer5 = styled.div`
+    -ms-transform:scale(1.1);
+    transform:scale(1.1);
+  }`;
+
+export const PhysicalTextContainer5 = styled.div`
   width: 440px;
   height: 80px;
   margin: 190px auto;
   background-color:transparent;
   text-align:center;
 `;
+
 
 
 //days y las siguientes 14 AGOTO NEW CHANGES
@@ -280,7 +277,7 @@ export const DaysConatiner = styled.div`
   margin: 0rem auto;
   justify-content: center;
   align-items: center;
-  background-color:red;
+  background-color:transparent;
 `
 export const DaysImg = styled.img`
    width: 400px;
@@ -418,3 +415,61 @@ color:whitesmoke;
 font-weight:lighter;
 margin-top:5px;
 `
+export const Videos=styled.iframe`
+  margin-left:0px;
+  width:400px;
+  height:215px;
+  border:none;
+    `
+export const SetConatiner = styled.div`
+display:flex;
+width: 400px;
+height:220px;
+margin: 0rem auto;
+justify-content: center;
+align-items: center;
+background-color:transparent;
+border:none;
+`
+//other page
+export const ResumeConte = styled.div`
+display:flex;
+width: 400px;
+height:220px;
+margin: 120px auto;
+justify-content: center;
+align-items: center;
+background-color:#7cb2e97e;
+border:none;
+color:whitesmoke;
+font-weight:lighter;
+`
+export const Star=styled.img`
+  width:20px;
+  height:20px;
+  border: 1px solid blue;
+  border-radius:50%;
+  margin-left:3px;
+`
+export const ButtonResume= styled.button`
+width: 75%;
+height:37px;
+padding: 10px 0px 10px 0px;
+margin: 70px 55px auto;
+border-radius: 15px;
+border: 1px solid #2BE7E8;
+justify-content: center;
+align-items: center;
+
+background-color: #2BE7E8;
+font-size: 18px;
+font-weight: bold;
+color: #FFFFFF;
+text-decoration: none;
+cursor: pointer;
+transition:0.3s;
+&:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}`

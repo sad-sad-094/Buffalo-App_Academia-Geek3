@@ -3,7 +3,7 @@ E-mail: sadw621@gmail.com -  */
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import {MainContainer,DaysConatiner, DaysImg,ButtonF5, EnterDay6,TitleVideo, PhysicalP2, TitleVideo1, SetTitle } from "../../Styles/GlobalStyles";
+import {MainContainer,DaysConatiner, ButtonF5, EnterDay6,TitleVideo, PhysicalP2, TitleVideo1, SetTitle, Videos, SetConatiner } from "../../Styles/GlobalStyles";
 
 function SetsWorkout() {
 
@@ -12,9 +12,9 @@ function SetsWorkout() {
   return (
 
     <div>
-        <DaysConatiner>
-          <DaysImg src="https://res.cloudinary.com/felixces/image/upload/v1660516322/imagenes%20reto3/Img_vkko0t.png" />
-        </DaysConatiner>
+        <SetConatiner>
+        <Videos title='' src='https://www.youtube.com/embed/L_W4F6_c2Jg'/>
+        </SetConatiner>
         <TitleVideo>
         <PhysicalP2>3 set</PhysicalP2>
         <PhysicalP2>12 repetitions</PhysicalP2>
