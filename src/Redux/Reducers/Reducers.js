@@ -11,6 +11,13 @@ let defaultUser = {
   id: "",
 }
 
+let defaultPhyData = {
+  height: 0,
+  weight: 0,
+  age: 0,
+  gender: "",
+}
+
 const loginReducer = (state = defaultUser, action) => {
   switch (action.type) {
     case '@user/login':
@@ -22,6 +29,17 @@ const loginReducer = (state = defaultUser, action) => {
   }
 }
 
+const physicalReducer = (state = defaultPhyData, action) => {
+  switch (action.type) {
+    case '@user/setphysicaldata':
+      return {...action.payload, gender:""};
+    case '@user/setgender':
+      return {...state, gender: action.payload.gender};
+    default:
+      return state;
+  }
+}
 
 
-export { loginReducer };
+
+export { loginReducer, physicalReducer };

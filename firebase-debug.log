@@ -1,0 +1,21 @@
+[debug] [2022-08-17T00:44:35.508Z] ----------------------------------------------------------------------
+[debug] [2022-08-17T00:44:35.512Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-08-17T00:44:35.512Z] CLI Version:   11.7.0
+[debug] [2022-08-17T00:44:35.513Z] Platform:      win32
+[debug] [2022-08-17T00:44:35.513Z] Node Version:  v14.18.0
+[debug] [2022-08-17T00:44:35.515Z] Time:          Tue Aug 16 2022 19:44:35 GMT-0500 (hora estándar de Colombia)
+[debug] [2022-08-17T00:44:35.515Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-17T00:44:35.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-17T00:44:35.546Z] > authorizing via signed-in user (sadw621@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Personal\VsCode\Academia_Geek\Etapa-2\buffalo-app
+

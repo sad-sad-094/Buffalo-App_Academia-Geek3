@@ -2,7 +2,7 @@
 E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { loginReducer } from '../Reducers/Reducers';
+import { loginReducer, physicalReducer } from '../Reducers/Reducers';
 
 
 const r = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -10,7 +10,8 @@ const r = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const Store = createStore(
   combineReducers(
     {
-      userLogin: loginReducer
+      userLogin: loginReducer,
+      physicalData: physicalReducer
     }
   ), r(applyMiddleware())
 )

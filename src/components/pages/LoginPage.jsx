@@ -42,7 +42,7 @@ function Login(props) {
             let action = Object.assign({}, actionLogin)
             action.payload = { name: user.displayName, coins: userData.coins, phone: userData.phone, email: user.email, isLogged: true, id: user.uid }
             dispatch(action)
-            navigation('/home');
+            navigation('/physicaldata');
           } else {
             toast.error('Please call the admin because your sing up has an error.')
           }
@@ -64,7 +64,6 @@ function Login(props) {
     }
   }
 
-
   const letLogin = () => {
     app.auth().signInWithEmailAndPassword(user.email, user.password)
       .then(response => {
@@ -74,7 +73,6 @@ function Login(props) {
         checkLoginErr(err.code);
       })
   }
-
 
   const loginGoogle = () => {
 
@@ -99,7 +97,7 @@ function Login(props) {
         <LoginInput loginUser={user} loginSetUser={setUser} />
       </BasicContainer>
       <WelcomeContainer>
-        <LoginButton  />
+        <LoginButton login={letLogin} />
         <SingUp>
           <p>Or sign in with: <FcGoogle onClick={loginGoogle} /> </p>
           <p>Don´t have an account? <a onClick={() => { navigation("/createaccount") }}>Sing up</a></p>
