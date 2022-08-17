@@ -4,7 +4,7 @@ E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LandingContainer, LandingImg } from "../../Styles/GlobalStyles";
+import { LandingContainer, LandingImg } from '../../Styles/GlobalStyles';
 
 
 function Landing() {
