@@ -175,6 +175,30 @@ export const PolaroidContainer = styled.div`
   padding: 10px 20px;
 `;
 
+export const ComeBackButton = styled.button`
+  width: 10%;
+  padding: 3px 2px;
+  margin: 0 auto;
+  justify-conent: center;
+  align-items: center;
+  background-color: #2BE7E8;
+  border: 1px solid #2BE7E8;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+`;
+
+
+//-------
+
 export const PhysicalDetail = styled.img`
   width: 200px;
   margin: 1rem auto;
@@ -286,12 +310,11 @@ export const MaleImg = styled.img`
 `;
 
 export const PhysicalTextContainer4 = styled.div`
-  width: 190px;
-  height: 30px;
-  margin: -60px auto;
-  background-color:transparent;
+  width: 50%;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
   text-align:center;
- 
 `;
 
 export const SuscriptP = styled.p`
@@ -344,4 +367,332 @@ export const PhysicalTextContainer5 = styled.div`
   background-color:transparent;
   text-align:center;
 `;
+
+
+//days y las siguientes 14 AGOTO NEW CHANGES
+
+export const DaysConatiner = styled.div`
+  display:flex;
+  width: 400px;
+  height:220px;
+  margin: 0rem auto;
+  justify-content: center;
+  align-items: center;
+  background-color:transparent;
+`;
+
+export const DaysImg = styled.img`
+  width: 70%;
+  border-radius: 10%
+`;
+
+export const DaysP = styled.p`
+  color:whitesmoke;
+  font-weight:lighter;
+  margin-top:0px;
+`;
+
+export const DayConte = styled.div`
+  display:flex;
+  width:90%;
+  column-gap:30px;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const DayB3 = styled.button`
+  border-radius:10px;
+  color:whitesmoke;
+  font-weight:lighter;
+  width:65px;
+  height:30px;
+  background-color:transparent;
+  border: 0.2px solid whitesmoke; 
+  cursor: pointer;
+
+  &:hover {
+    border: solid 2px #7cb2e97e; 
+  }
+
+  z-index:2;
+`;
+
+export const EnterDay = styled.input`
+  width:75%;
+  height:30px;
+  margin-top:120px;
+  margin-left:50px;
+  border-radius:15px;
+  background-color:transparent;
+  border:0.001px solid whitesmoke;
+`;
+
+export const EnterDay2 = styled.input`
+  width:75%;
+  margin-top:10px;
+  margin-left:50px;
+  padding: 0.5rem 2rem;
+  border-radius:15px;
+  background-color:transparent;
+  border:0.001px solid whitesmoke;
+`;
+
+export const ButtonDay = styled.button`
+  width: 70%;
+  padding: 3px 2px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 1px solid #2BE7E8;
+  justify-conent: center;
+  align-items: center;
+  background-color: #2BE7E8;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+`;
+
+//SECOND DAY CODE 15 AGOSTO
+export const ButtonF5 = styled.button`
+  width: 75%;
+  height:35px;
+  padding: 3px 2px;
+  margin: 140px 55px auto;
+  border-radius: 15px;
+  border: 1px solid #2BE7E8;
+  justify-content: center;
+  align-items: center;
+  background-color: #2BE7E8;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  transition:0.3s;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
+
+export const EnterDay6 = styled.input`
+  width:80px;
+  height:30px;
+  margin-top:0px;
+  margin-left:0px;
+  border-radius:15px;
+  background-color:transparent;
+  border:none;
+  outline:none;
+  padding-top:10px;
+`;
+
+export const TitleVideo = styled.div`
+  display:flex;
+  margin:1rem auto;
+  width:50%;
+  gap: 2rem;
+  justify-content:center;
+  align-items:center;
+`;
+
+export const PhysicalP2 = styled.p`
+  color:whitesmoke;
+  font-weight:lighter;
+  margin-top:0px;
+`;
+
+export const TitleVideo1 = styled.div`
+  display:flex;
+  margin-left:50px;
+  margin-top:10px;
+  border-radius:15px;
+  width:340px;
+  height:35px;
+  column-gap:50px;
+  background-color:transparent;
+  border: solid 2px #7cb2e97e; 
+  
+  &:hover {
+    background-color: #2BE7E8;
+  }
+`;
+
+export const SetTitle = styled.h1`
+  font-size:18px;
+  margin-left:5px;
+  color:whitesmoke;
+  font-weight:lighter;
+  margin-top:5px;
+`;
+
+export const Videos = styled.iframe`
+  margin-left:0px;
+  width:400px;
+  height:215px;
+  border:none;
+`;
+
+export const SetConatiner = styled.div`
+  display:flex;
+  width: 400px;
+  height:220px;
+  margin: 0rem auto;
+  justify-content: center;
+  align-items: center;
+  background-color:transparent;
+  border:none;
+`;
+
+//other page
+export const ResumeConte = styled.div`
+  display:flex;
+  width: 400px;
+  height:220px;
+  margin: 120px auto;
+  justify-content: center;
+  align-items: center;
+  background-color:#7cb2e97e;
+  border:none;
+  color:whitesmoke;
+  font-weight:lighter;
+`;
+
+export const Star = styled.img`
+  width:20px;
+  height:20px;
+  border: 1px solid blue;
+  border-radius:50%;
+  margin-left:3px;
+`;
+export const ButtonResume = styled.button`
+  width: 75%;
+  height:37px;
+  padding: 10px 0px 10px 0px;
+  margin: 70px 55px auto;
+  border-radius: 15px;
+  border: 1px solid #2BE7E8;
+  justify-content: center;
+  align-items: center;
+  background-color: #2BE7E8;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  transition:0.3s;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
+
+export const ButtonE= styled.button`
+  width: 70%;
+  padding: 0.2rem 2rem;
+  margin-top: 3rem;
+  border-radius: 15px;
+  border: 1px solid #2BE7E8;
+  justify-content: center;
+  align-items: center;
+  background-color: #2BE7E8;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  transition:0.3s;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
+
+export const EnterE= styled.input`
+  padding-left:10px;
+  width:150%;
+  height:35px;
+  margin-top:20px;
+  margin-left:-110px;
+  border-radius:15px;
+  background-color:transparent;
+  border:0.001px solid whitesmoke;
+
+  ::-webkit-input-placeholder { color: whitesmoke; } 
+  ::-moz-placeholder { color: whitesmoke; } 
+  
+`;
+
+export const ImgInput=styled.img`
+  position:absolute;
+  width:29px;
+  height:29px;
+  left:28px;
+  top:2px;
+`;
+
+export const EnterEdit = styled.input`
+  width:80px;
+  height:33px;
+  margin-left:22px;
+  border-radius:15px;
+  background-color:rgba(61, 46, 170, 0.6);
+  border:none;
+  outline:none;
+  text-align:end;
+  padding-right:5px; 
+  ::-webkit-input-placeholder { color: whitesmoke; } 
+::-moz-placeholder { color: whitesmoke; } 
+`;
+
+export const ConteImg= styled.div`
+  position:relative;
+`;
+
+export const EditContain2=styled.div`
+  display:flex;
+  width:70%;
+  column-gap:5px;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const EditImg = styled.img`
+  width: 15%;
+  border-radius:50%;
+  object-fit:cover;
+  background-color:transparent;
+`;
+
+export const EditP=styled.p`
+  color:whitesmoke;
+  font-weight:lighter;
+  width:60px;
+  background-color:transparent;
+`;
+
+export const EditConte = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0.5rem auto;
+  justify-content: center !important;
+  alig-items: center !important;
+`;
+
 

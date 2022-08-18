@@ -2,16 +2,26 @@
 E-mail: sadw621@gmail.com - j.f.gcespedes@hotmail.com */
 
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CatCards, ColumnContainer, HorizontalCards, MainContainer, Polaroid, PolaroidContainer, UserHeader, VerticalCards } from '../../Styles/GlobalStyles';
 import { GrNotification } from 'react-icons/gr';
+import { CgProfile } from 'react-icons/cg';
 import Carousel from 'react-bootstrap/Carousel';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 
 function HomePage() {
 
-  const userName = useSelector(state => state.userLogin.name)
+  const userName = useSelector(state => state.userLogin.name);
+  const userPhyData = useSelector(state => state.physicalData.height);
+  const navigation = useNavigate()
+
+  useEffect(() => {
+    if (userPhyData === 0) {
+      navigation('/physicaldata');
+    }
+  })
 
   return (
 
@@ -22,6 +32,7 @@ function HomePage() {
           <h2>Hi!</h2>
           <p>{userName}</p>
         </ColumnContainer>
+        <CgProfile style={{ color: '#2BE7E8', fontSize: '26px' }} onClick={() => navigation('/profile')} />
         <GrNotification style={{ color: '#2BE7E8', fontSize: '26px' }} />
       </UserHeader>
 
@@ -62,12 +73,14 @@ function HomePage() {
       </Carousel>
 
       <HorizontalCards>
-        <CatCards><p>All Body</p></CatCards>
-        <CatCards><p>Triceps</p></CatCards>
-        <CatCards><p>Biceps</p></CatCards>
-        <CatCards><p>Breast</p></CatCards>
-        <CatCards><p>Back</p></CatCards>
-        <CatCards><p>Legs</p></CatCards>
+
+        <CatCards style={{cursor: 'pointer'}} onClick={() => navigation('/days')}><p>All Body</p></CatCards>
+        <CatCards style={{cursor: 'pointer'}} onClick={() => navigation('/days')}><p>Triceps</p></CatCards>
+        <CatCards style={{cursor: 'pointer'}} onClick={() => navigation('/days')}><p>Biceps</p></CatCards>
+        <CatCards style={{cursor: 'pointer'}} onClick={() => navigation('/days')}><p>Breast</p></CatCards>
+        <CatCards style={{cursor: 'pointer'}} onClick={() => navigation('/days')}><p>Back</p></CatCards>
+        <CatCards style={{cursor: 'pointer'}} onClick={() => navigation('/days')}><p>Legs</p></CatCards>
+
       </HorizontalCards>
 
       <VerticalCards>
