@@ -18,7 +18,7 @@ function HomePage() {
   const navigation = useNavigate()
 
   useEffect(() => {
-    if (userPhyData === 0) {
+    if (!userPhyData) {
       navigation('/physicaldata');
     }
   })
