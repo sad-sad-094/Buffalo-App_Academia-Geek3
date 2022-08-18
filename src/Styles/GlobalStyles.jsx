@@ -10,7 +10,6 @@ export const LandingImg = styled.img`
   margin: 1rem auto;
 `;
 
-
 export const LandingContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -60,7 +59,7 @@ export const WelcomeContainer = styled.div`
   a {
     text-decoration: underline;
     cursor: pointer;
-    font-width: bold;
+    font-weight: bold;
     color:#ffffff;
   }
 `;
@@ -95,7 +94,86 @@ export const Input = styled.input`
   font-size: 14px;
 `;
 
-//PARTNER
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const UserHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 15%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2E3562;
+  padding: 1rem 3rem;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+`;
+
+export const ColumnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+`;
+
+export const HorizontalCards = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 1rem auto;
+`;
+
+export const CatCards = styled.div`
+  display: flex;
+  width: auto;
+  padding: 0.1rem 1rem;
+  background-color: #2E3562;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2E3562;
+  border-radius: 10px;
+`;
+
+export const VerticalCards = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 1rem auto;
+`;
+
+export const Polaroid = styled.div`
+  width: 80%;
+  background-color: #2E3562;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+
+  img {
+    width: 100%;
+  }
+`;
+
+export const PolaroidContainer = styled.div`
+  text-align: center;
+  padding: 10px 20px;
+`;
 
 export const PhysicalDetail = styled.img`
   width: 200px;
@@ -112,18 +190,19 @@ export const PhysicalConatiner = styled.div`
 `;
 
 export const PhysicalTextContainer = styled.div`
-  width: 150px;
-  height: 30px;
-  margin: -30px auto;
-  background-color:transparent;
-  text-align:center;
- 
+  width: 70%;
+  margin: 1rem auto;
+  text-align: center;
+  justify-content: center;
+
+  p {
+    font-weight: bold;
+    font-size: 18px
+  }
 `;
 
 export const PhysicalP = styled.p`
-  color:whitesmoke;
-  font-weight:bolder;
-  margin-top:0px;
+
   
 `;
 
@@ -159,20 +238,20 @@ export const ButtonF = styled.button`
   }
   `;
 
-export const MainContainer = styled.div`
-  width: 35%;
-  height:345px;
-  background-color:transparent;
+export const MainContainerF = styled.div`
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const EnterD = styled.input`
-  width:70px;
-  height:20px;
-  margin-top:30px;
-  margin-left:180px;
+  width:50%;
+  margin: 0.5rem auto;
+  border-radius: 15px;
+  padding-left: 2rem;
 `;
 
 export const PhysicalTextContainer3 = styled.div`
@@ -192,16 +271,15 @@ export const EnterD2 = styled.input`
 `;
 
 export const MaleImg = styled.img`
-  width:100px;
-  height:100px;
-  margin-left: 170px;
+  width: 7%;
+  margin: 1rem auto;
   transition:0.3s;
   
   &:hover {
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);
-    background-color: rgba(78, 141, 205, 0.5); 
+    background-color: #2E3562; 
     border-radius:10px;
     
   }
@@ -461,6 +539,106 @@ border: 1px solid #2BE7E8;
 justify-content: center;
 align-items: center;
 
+background-color: #2BE7E8;
+font-size: 18px;
+font-weight: bold;
+color: #FFFFFF;
+text-decoration: none;
+cursor: pointer;
+transition:0.3s;
+&:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}`
+//17 agosto miercoles
+
+export const EditImg = styled.img`
+  width: 100px;
+  height:100px;
+  border-radius:50%;
+  object-fit:cover;
+  background-color:transparent;
+`
+
+export const EditConte = styled.div`
+width: 100px;
+height:140px;
+margin-top:-60px;
+margin-left:545px;
+background-color:transparent;
+`
+export const EditP=styled.p`
+  color:whitesmoke;
+  font-weight:lighter;
+  width:60px;
+  margin-top:100px;
+  margin-left:20px;
+  background-color:transparent;
+  `
+  export const EditContain=styled.div`
+  display:flex;
+  width:250px;
+  height:33px;
+  background-color:transparent;
+  column-gap:30px;
+  margin-left:-30px;
+  margin-top:90px;
+`
+export const EditContain2=styled.div`
+  display:flex;
+  width:350px;
+  height:35px;
+  background-color:transparent;
+  column-gap:5px;
+  margin-left:-110px;
+  margin-top:90px;
+`
+export const EnterEdit = styled.input`
+  width:80px;
+  height:33px;
+  margin-left:22px;
+  border-radius:15px;
+  background-color:rgba(61, 46, 170, 0.6);
+  border:none;
+  outline:none;
+  text-align:end;
+  padding-right:5px; 
+  ::-webkit-input-placeholder { color: whitesmoke; } 
+::-moz-placeholder { color: whitesmoke; } 
+`
+export const EnterE= styled.input`
+padding-left:10px;
+width:180%;
+height:35px;
+margin-top:20px;
+margin-left:-110px;
+border-radius:15px;
+background-color:transparent;
+border:0.001px solid whitesmoke;
+::-webkit-input-placeholder { color: whitesmoke; } 
+::-moz-placeholder { color: whitesmoke; } 
+`
+export const ImgInput=styled.img`
+position:absolute;
+  width:29px;
+  height:29px;
+  left:28px;
+  top:2px;
+`
+export const ConteImg= styled.div`
+  position:relative;
+`
+export const ButtonE= styled.button`
+width: 180%;
+height:37px;
+padding: -15px 0px 10px 0px;
+margin-left: -110px ;
+margin-top:190px;
+border-radius: 15px;
+border: 1px solid #2BE7E8;
+justify-content: center;
+align-items: center;
 background-color: #2BE7E8;
 font-size: 18px;
 font-weight: bold;
