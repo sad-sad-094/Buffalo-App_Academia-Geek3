@@ -11,7 +11,7 @@ import firebase from 'firebase';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { actionLogin } from '../../Redux/Actions/Actions';
+import { actionGenderData, actionLogin, actionPhyData } from '../../Redux/Actions/Actions';
 import { FcGoogle } from 'react-icons/fc';
 
 function Login(props) {
@@ -39,10 +39,17 @@ function Login(props) {
         .then(doc => {
           if (doc.exists) {
             let userData = doc.data();
-            let action = Object.assign({}, actionLogin)
+            let action = Object.assign({}, actionLogin);
             action.payload = { name: user.displayName, coins: userData.coins, phone: userData.phone, email: user.email, isLogged: true, id: user.uid }
-            dispatch(action)
-            navigation('/physicaldata');
+            dispatch(action);
+            // navigation('/physicaldata');
+            let action1 = Object.assign({}, actionPhyData);
+            action1.payload = { height: userData.height, weight: userData.weight, age: userData.age, }
+            dispatch(action1);
+
+            let action2 = Object.assign({}, actionGenderData);
+            action2.payload = { gender: userData.gender, }
+            dispatch(action2);
           } else {
             toast.error('Please call the admin because your sing up has an error.')
           }
@@ -99,7 +106,7 @@ function Login(props) {
       <WelcomeContainer>
         <LoginButton login={letLogin} />
         <SingUp>
-          <p>Or sign in with: <FcGoogle onClick={loginGoogle} /> </p>
+          <p>Or sign in with: <FcGoogle style={{ cursor: 'pointer' }} onClick={loginGoogle} /> </p>
           <p>Don´t have an account? <a onClick={() => { navigation("/createaccount") }}>Sing up</a></p>
         </SingUp>
       </WelcomeContainer>

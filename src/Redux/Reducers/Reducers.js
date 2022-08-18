@@ -18,7 +18,13 @@ let defaultPhyData = {
   gender: "",
 }
 
+let defaultTimer = {
+  start: 0,
+  end: 0,
+}
+
 const loginReducer = (state = defaultUser, action) => {
+  
   switch (action.type) {
     case '@user/login':
       return action.payload;
@@ -26,6 +32,7 @@ const loginReducer = (state = defaultUser, action) => {
       return defaultUser
     default:
       return state;
+      
   }
 }
 
@@ -40,6 +47,17 @@ const physicalReducer = (state = defaultPhyData, action) => {
   }
 }
 
+const timerReducer = (state = defaultTimer, action) => {
+  switch (action.type) {
+    case '@activity/start':
+      return {...state, start: action.payload.start};
+    case '@activity/end':
+      return {...state, end: action.payload.end};
+    default:
+      return state;
+  }
+}
 
 
-export { loginReducer, physicalReducer };
+
+export { loginReducer, physicalReducer, timerReducer };

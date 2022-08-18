@@ -7,6 +7,11 @@ const actionLogin = {
   payload: {}
 }
 
+const actionLogout = {
+  type: '@user/logout',
+  payload: {}
+}
+
 const actionPhyData = {
   type: '@user/setphysicaldata',
   payload: {}
@@ -17,4 +22,14 @@ const actionGenderData = {
   payload: {}
 }
 
-export { actionLogin, actionPhyData, actionGenderData };
+const actionTimeStart = {
+  type: '@activity/start',
+  payload: {}
+}
+
+const actionTimeEnd = {
+  type: '@activity/end',
+  payload: {}
+}
+
+export { actionLogin, actionPhyData, actionGenderData, actionLogout, actionTimeStart, actionTimeEnd };

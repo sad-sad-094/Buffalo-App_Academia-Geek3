@@ -4,14 +4,17 @@ E-mail: sadw621@gmail.com -  */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PhysicalDetail, PhysicalConatiner, PhysicalTextContainer, MainContainer, PhysicalP, MaleImg, PhysicalTextContainer2, ButtonF } from "../../Styles/GlobalStyles";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { actionGenderData } from '../../Redux/Actions/Actions';
+import { db } from '../../utils/Firebase';
+import { toast } from 'react-toastify';
 
 
 function Gender() {
 
   const navigation = useNavigate();
   const dispatch = useDispatch();
+  const userIdSelector = useSelector(state => state.userLogin.id);
 
   const [userGender, setUserGender] = useState("");
 
@@ -22,7 +25,16 @@ function Gender() {
     dispatch(action);
     console.log(action);
 
-    navigation("/home");
+    db.collection('userData').doc(userIdSelector).update({ gender: userGender })
+      .then(() => { //Then no tiene response porque pasa sin dar respueste => status 204
+        toast.success('Data seted correctly.');
+        navigation("/home");
+      })
+      .catch((error) => {
+        // The document probably doesn't exist.
+        toast.warn("Error updating data: ", error);
+        navigation("/physicaldata")
+      });
 
   }
 
